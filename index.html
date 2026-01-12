@@ -1,182 +1,30 @@
- 
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>job-application</title>
+     <a href=“aboutme.html”>About me</a> |
+    <meta charset=“UTF-8”>
+    <title>Sirachat Note</title>
 </head>
-
-<style>
-    body {
-        background-color: #f5f5f5;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-
-    input:focus,
-    textarea:focus,
-    select:focus {
-        border-color: #007bff;
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    }
-
-    input:not(:placeholder-shown):valid {
-        border: 2px solid #28a745;
-        background-color: #f0fff4;
-    }
-
-    input:not(:placeholder-shown):invalid {
-        border: 2px solid #dc3545;
-        background-color: #fff5f5;
-    }
-</style>
-
 <body>
-    <form action="/register" method="POST">
-        <h1>
-            <center>ใบสมัครงาน</center>
-        </h1>
-        <fieldset>
-            <legend>กรอกข้อมูลส่วนตัว</legend>
+    <h1>Welcome to My Website</h1>
+    <p>This is my first webpage!</p>
+    
+    <h2>About Me</h2>
+    <p>I am learning HTML.</p>
+    
+    <h2>My Favorite Fruits</h2>
+    <ul>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Apple</li>
+    </ul>
+    
+    <h2>Useful Links</h2>
+    <a href=“https://www.w3schools.com”>Learn at W3Schools</a>
+    <a href=“basichtml2.html”>Page2</a>
+    <br><br>
+    <button>Click Me!</button>
 
-            <div class="form-group">
-                <label for="username">ชื่อ-นามสกุล : </label>
-                <input type="text"
-id="username"
-name="username"
-pattern="[A-Za-z0-9_ ]{4,16}"
-placeholder=" "
-title="4-16 ตัวอักษร (a-z, 0-9, _)"
-required
-autofocus>
-            </div>
-            <div class="form-group">
-                <label for="email">อีเมล : </label>
-                <input type="email"
-id="email"
-name="email"
-placeholder="example@email.com"
-required>
-            </div>
-            <div class="form-group">
-                <label for="password">รหัสผ่าน : </label>
-                <input type="password"
-id="password"
-name="password"
-minlength="8"
-pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
-placeholder=" "
-title="ต้องมีตัวอักษรและตัวเลข อย่างน้อย 8 ตัว"
-required>
-            </div>
-
-            <div class="form-group">
-                <label for="tel">เบอร์โทรศัพท์ : </label>
-                <input type="tel"
-name="phone"
-pattern="0[0-9]{2}-[0-9]{3}-[0-9]{4}"
-placeholder="0xx-xxx-xxxx"
-title="กรุณากรอกในรูปแบบ 0xx-xxx-xxxx"
-required>
-            </div>
-
-            <div class="form-group">
-                <label for="birthdate">วันเกิด : </label>
-                <input type="date"
-id="birthdate"
-name="birthdate"
-max="2010-01-01">
-            </div>
-            <br>
-
-            <br>
-            <div class="form-group">
-                <label for="่job-title">ตำแหน่งที่สนใจ : </label>
-                <select id="job-title" name="job-title">
-<optgroup label="ฝ่ายบริหาร">
-<option value="HR Manager">ผู้จัดการฝ่ายบุคคล</option>
-<option value="Finance Manage">ผู้จัดการฝ่ายการเงิน</option>
-</optgroup>
-<optgroup label="ฝ่ายปฏิบัติการ">
-<option value="production engineer">วิศวกรการผลิต</option>
-<option value="quality controller">ผู้ควบคุมคุณภาพ</option>
-<option value="production line worker">พนักงานสายการผลิต</option>
-<option value="technician">ช่างเทคนิค</option>
-</optgroup>
-<optgroup label="ฝ่ายขายและการตลาด">
-<option value="Marketing Manager">ผู้จัดการฝ่ายการตลาด</option>
-<option value="Sales Administrator">เจ้าหน้าที่ประสานงานขาย</option>
-</optgroup>
-<optgroup label="ฝ่ายสนับสนุน">
-<option value="Secretary">เลขานุการ </option>
-<option value="Office Assistant">ผู้ช่วยสำนักงาน</option>
-</optgroup>
-</select>
-            </div>
-            <br>
-            <input type="number"
-       name="experience"
-       title="ปี"
-       placeholder="ประสบการณ์ทำงาน (ปี)"
-       min="0">
-            <fieldset>
-                <legend>ทักษะที่มี</legend>
-                <div class="checkbox-group">
-                    <label>
-<input type="checkbox" name="skills" value="Communication">ทักษะการสื่อสาร<br>
-</label>
-                    <label>
-<input type="checkbox" name="skills" value="Critical Thinking & Problem Solving">การคิดวิเคราะห์และการแก้ปัญหา<br>
-</label>
-                    <label>
-<input type="checkbox" name="skills" value="Adaptability & Flexibility">ความยืดหยุ่นและการปรับตัว<br>
-</label>
-                    <label>
-<input type="checkbox" name="skills" value="Creativity">ความคิดสร้างสรรค์<br>
-</label>
-                    <label>
-<input type="checkbox" name="skills" value="Digital Literacy">ทักษะดิจิทัล<br>
-</label>
-                    <label>
-<input type="checkbox" name="skills" value="Collaboration">การทำงานร่วมกับผู้อื่น<br>
-</label>
-                    <label>
-<input type="checkbox" name="skills" value="Time Management & Multitasking">การจัดการเวลาและการทำงานหลายอย่างพร้อมกัน<br>
-</label>
-                    <label>
-<input type="checkbox" name="skills" value="Leadership & Responsibility">ความเป็นผู้นำและความรับผิดชอบ<br>
-</label>
-                </div>
-            </fieldset>
-            <div class="form-group">
-                <label for="introduce">แนะนำตัว : </label>
-                <textarea id="introduce"
-name="introduce"
-rows="5"
-cols="50"
-maxlength="500"></textarea>
-            </div>
-            <br>
-            <div class="files">
-                <label>
-อัพโหลด Resume :
-<input type="file" name="resume" accept=".pdf"required>
-</label>
-                <div class="checkbox-group">
-                    <label>
-<input type="checkbox" name="agree" required>
-ยอมรับเงื่อนไขการใช้งาน
-</label>
-                </div>
-                <br>
-                <button type="submit">ยืนยัน</button>
-                <button type="reset">รีเซ็ต</button>
-        </fieldset>
-    </form>
+    
 </body>
-
 </html>
